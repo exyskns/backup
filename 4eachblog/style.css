@@ -5,9 +5,7 @@ html, body{ height: 100%;  /* ブラウザ画面の高さをmaxで使用するという意味 */
 
 
 .logo{
-	position:absolute;
-	top:0px;
-	left:10px;
+    width:300px;
 	}
 
 
@@ -18,6 +16,10 @@ width:100%;
 height:50px;
 line-height:50px;
 }
+
+
+header ul{}
+
 
 header li{float:left;
 list-style:none;
@@ -91,7 +93,7 @@ list-style-type:none;
 	
 .box1 .text{
     font-size:15px;
-    text-align:center;
+    text-align:left;
 }
 	
 
