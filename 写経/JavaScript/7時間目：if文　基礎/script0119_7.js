@@ -1,4 +1,6 @@
-var b1=100;
-if(b1>=100){
-    document.write("100より小さい数です");
+var b2=3;
+if(b2<1){
+    document.write("A");
+}else if(b2>1){
+    document.write("B");
 }

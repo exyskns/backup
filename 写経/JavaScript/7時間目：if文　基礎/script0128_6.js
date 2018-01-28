@@ -1,6 +1,6 @@
-var b3=10;
-if(b3<10){
+var c5=10;
+if(c5>=10||c5<5 ){
     document.write("X");
-}else if(b3>5){
+}else{
     document.write("Y");
 }

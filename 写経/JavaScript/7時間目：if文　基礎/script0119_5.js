@@ -1,4 +1,4 @@
-var a4=12;
-if(a4==12){
-    document.write("同じ数字");
+var a5="田中";
+if(a5=="田中"){
+    document.write(a5+"さんです");
 }
