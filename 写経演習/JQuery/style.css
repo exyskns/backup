@@ -27,6 +27,7 @@ header li{float:left;
 
 
 
+
 .main-box{clear: left;
     width: 100%;
 }
@@ -38,16 +39,12 @@ header li{float:left;
 }
 
 .leftside h1{margin-top:20px;
-    width:100%;
     border-left:5px solid black;
     border-bottom:2px solid black;
     padding-left:10px;
 }
 
 
-.leftside .bookstore{
- width:100%;
-}
 
 
 .box{width:100%;
@@ -76,7 +73,7 @@ header li{float:left;
 .rightside{float:left;
         width:300px;
         margin-left:20px;
-        margin-top:25px;
+        margin-top:34px;
     
 }
 
@@ -90,8 +87,6 @@ header li{float:left;
 
 .rightside li{padding-left:15px;
         }
-
-
 
 
 
