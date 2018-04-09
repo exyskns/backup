@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>お問い合わせフォーム</title>
-<link ref="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-     
+
 <body>
     <form method="xxx" action="xxx">
-     
-    <h2>お問い合わせフォーム</h2>
-    
-    <div class="main">
-        <p>名前</p>
-        <input type="text" name="xxx" size="50">
-        
-        <p>メールアドレス</p>
-        <input type="text" name="xxx" size="50">
-        
-        <p>年齢</p>
-        <select name="xxx">
-            <pution value="xxx"></pution>
-        </select><br>
-        
-        <p>コメント</p>
-        <textarea name="xxx" rows="5" cols="40"></textarea>
-        
-        <input type="submit" value="送信する">
-        
-    </div>
-              
-  </form>
+        <h2 class=top>お問い合わせフォーム</h2>
+
+        <div class="main">
+            <p>名前</p>
+            <div class="box">
+                <input type="text" name="xxx" size="30">
+            </div>
+
+
+            <p>メールアドレス</p>
+            <div class="box">
+                <input type="text" name="xxx" size="30">
+            </div>
+
+            <p>年齢</p>
+            <div class="box">
+                <input type="text" name="xxx" size="15" placeholder="選択してください">
+
+                <select name="xxx">
+                        <opution value="xxx">
+                            <script>
+                                for(var a=18; a<=65; a++)   document.write(a)
+                            </script>
+                        </opution>
+                
+                </select>
+            </div>
+
+            <p>コメント</p>
+            <div class="box">
+                <textarea name="xxx" rows="7" cols="30"></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="送信する">
+            </div>
+
+        </div>
+
+    </form>
 </body>
+
 </html>
