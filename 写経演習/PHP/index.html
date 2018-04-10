@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>お問い合わせフォーム</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    </head>
 
 <body>
     <form method="xxx" action="xxx">
@@ -27,15 +27,15 @@
             <p>年齢</p>
             <div class="box">
                 <input type="text" name="xxx" size="15" placeholder="選択してください">
-
-                <select name="xxx">
-                        <opution value="xxx">
-                            <script>
-                                for(var a=18; a<=65; a++)   document.write(a)
-                            </script>
-                        </opution>
-                
+             
+                <select>
+                    <script>
+                        for(var i=18; i<=65; i++){
+                            document.write("<option>" +i+"歳</option>");
+                        }
+                    </script>
                 </select>
+                 
             </div>
 
             <p>コメント</p>
