@@ -9,25 +9,23 @@
 </head>
 
 <body>
-    <h2>お問い合わせフォーム</h2>
-    
-    <div class="main">
+    <h1>お問い合わせフォーム</h1>
+            
+    <form method="post" action="mail_confirm.php">
         
-    <form method="xxx" action="xxx">
-        
-        <div class="box">
+        <div>
             <label>名前</label><br>
-            <input type="text" name="xxx" size="30">
+            <input type="text" class="box" name="name" size="30">
         </div>
         
-        <div class="box">
+        <div>
             <label>メールアドレス</label><br>
-            <input type="text" name="xxx" size="30">
+            <input type="text" class="box" name="mail" size="30">
         </div>
 
-        <div class="box">
+        <div>
             <label>年齢</label><br>
-            <input type="text" name="xxx" size="15" placeholder="選択してください">
+            <input type="text" class="box1" name="age" size="15" placeholder="選択してください">
              
                 <select>
                     <script>
@@ -38,16 +36,13 @@
                 </select>
         </div>
 
-        <div class="box">
-            <label>コメント</label><br>               <textarea name="xxx" rows="7" cols="30"></textarea>
+        <div>
+            <label>コメント</label><br>               <textarea name="comment" class="box" rows="7" cols="30"></textarea>    
         </div>
-            
             <input type="submit" class="submit" value="送信する">
         
     </form>
     
-    </div>
-
 </body>
 
 </html>
