@@ -1,7 +1,7 @@
 html{font-family: メイリオ}
 
 h1 {
-    width: 450px;
+    width: 500px;
     height: 35px;
     background-color: #EEEEEE ;
     border-left: 5px solid red;
@@ -11,29 +11,26 @@ h1 {
 }
 
 .confirm {
-    margin-left: 5px;
-    width: 450px;
-    border: 3px solid lightgray;
-    background-color: #EEEEEE;
+    background-color:#EEEEEE;
+    border:3px lightgray solid;
     border-radius: 10px;
+    width:450px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:60px;
 }
 
-p {padding-top: 15px;
-	padding-left: 10px;
-}
-	
-form {padding-top: 5px;
+form {float:left;
+    margin-right:15px;
    }
 
 .button1, .button2{
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+   padding: 4px 10px;
     margin-left:10px;
     margin-bottom:30px;
     border-radius:5px;
     color: white;
-    background-color:#AAAAAA;
+    background-color:#bfbfbf;
 }
 

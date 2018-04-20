@@ -1,7 +1,7 @@
 html{font-family: メイリオ}
 
 h1 {
-    width: 450px;
+    width: 500px;
     height: 35px;
     background-color: #EEEEEE ;
     border-left: 5px solid red;
@@ -11,36 +11,25 @@ h1 {
 }
 
 form {
-    margin-left: 5px;
-    width: 450px;
+    width: 500px;
     border: 3px solid lightgray;
     background-color: #EEEEEE;
     border-radius: 10px;
 }
 
-div {margin:10px;
+div {padding: 15px;
 }
 
-.box {
-     border: 1px solid gray;
-     margin-top:3px;
-     margin-bottom:30px;
-}
-.box1 {
-     border: 1px solid gray;
-     margin-top:3px;
-     margin-bottom:30px;
-    text-align:center;
-}
+.text, textarea, .dropdown {
+    border:1px solid #dfdfdf;
+    padding:5px;
+    color: #999;
+    background: #fff;
+    }
 
 .submit {
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    margin-left:10px;
-    margin-bottom:30px;
+    padding: 4px 10px;
     border-radius:5px;
     color: white;
-    background-color:#AAAAAA;
+    background-color:#bfbfbf;
 }
