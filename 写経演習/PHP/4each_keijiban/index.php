@@ -6,9 +6,10 @@
 <title>4eachblog 掲示板</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-    
+
+<img src="4eachblog_logo.jpg" class="logo">
+
 <header>
-    <img src="4eachblog_logo.jpg">
     <ul>
         <li>トップ</li>
         <li>プロフィール</li>
@@ -20,37 +21,52 @@
 </header>
 
 <body>
+	<div class="mainbox">
+    	<div class="leftside">
+        	<h1>プログラミングに役立つ掲示板</h1>
+    	</div>
+
+	
+			<div class="leftbox1">
+					<form method="post" action="insert.php">
+						<h2>入力フォーム</h2>
+						
+						<lable>ハンドルネーム</lable><br>
+						<input type="text" size="30" name="handlename"><br>
+						
+						<label>タイトル</label><br>
+						<input type="text" size="30" name="title">
+					
+						<label>コメント</label><br>
+					</form> 
+			</div>
+		
+
     
-<div class="mainbox">
-    <div class="leftbox">
-        <h1>プログラミングに役立つ掲示板</h1>
-    </div>
-    
-    <div class="rightbox">
-        <p>人気の記事</p>
-            <ul>
-                <li>PHPオススメ本</li>
-                <li>PHP　MyAdminの使い方</li>
-                <li>いま人気のエディタTop5</li>
-                <li>HTMLの基礎</li>
-            </ul>
-        <p>オススメリンク</p>
-            <ul>
-                <li>インターノウス株式会社</li>
-                <li>XAMPPのダウンロード</li>
-                <li>Eclipseのダウンロード</li>
-                <li>Braketsのダウンロード</li>
-            </ul>
-        <p>カテゴリ</p>
-            <ul>
-                <li>HTML</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>JavaScript</li>
-            </ul>
-            
-    </div>
-</div>
+		<div class="rightside">
+        	<h3>人気の記事</h3>
+            	<ul>
+					<li>PHPオススメ本</li>
+                	<li>PHP　MyAdminの使い方</li>
+                	<li>いま人気のエディタTop5</li>
+                	<li>HTMLの基礎</li>
+            	</ul>
+			<h3>オススメリンク</h3>
+				<ul>
+					<li>インターノウス株式会社</li>
+                	<li>XAMPPのダウンロード</li>
+                	<li>Eclipseのダウンロード</li>
+                	<li>Braketsのダウンロード</li>
+            	</ul>
+        	<h3>カテゴリ</h3>
+            	<ul>
+                	<li>HTML</li>
+                	<li>PHP</li>
+                	<li>MySQL</li>
+                	<li>JavaScript</li>
+            	</ul>    
+    	</div>
+	</div>
     
 </body> 
 
