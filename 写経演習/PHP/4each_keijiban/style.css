@@ -1,6 +1,9 @@
 html,body{height:100%
 }
 
+html{font-family: メイリオ;
+}
+
 .logo{width:300px;
 }
 
@@ -29,6 +32,50 @@ header li{list-style-type: none;
 	border-bottom: solid 2px;
 	border-left: solid 5px;
 	width:100%;
+}
+
+.leftbox1{clear: both;
+    border: solid 2px #dfdfdf;
+    width: 900px;
+    background-color: #fbfbfb;
+    margin-left: 5px;
+}
+
+.leftbox1 form{margin-left:10px;
+}
+
+.leftbox1 h2{border-left: solid 5px red;
+    margin-left:5px;
+    padding-left:10px;
+    font-size: 20px;
+}
+
+.textbox,textarea{margin-bottom:20px;
+    border: solid 1px #dfdfdf;
+    padding:5px;
+}
+
+.submit{background-color: gray;
+    color: white;
+    font-family: メイリオ;
+    margin-bottom: 25px;
+    padding: 5px 10px 5px 10px;
+    border-radius:5px;
+}
+
+.leftbox2{clear: both;
+    border: solid 2px #dfdfdf;
+    width: 890px;
+    background-color: #fbfbfb;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.leftbox3{clear: both;
+    border: solid 2px #dfdfdf;
+    width: 900px;
+    background-color: #fbfbfb;
+    margin-left: 5px;
 }
 
 .rightside{float: left;

@@ -26,23 +26,35 @@
         	<h1>プログラミングに役立つ掲示板</h1>
     	</div>
 
-	
 			<div class="leftbox1">
-					<form method="post" action="insert.php">
-						<h2>入力フォーム</h2>
+				<form method="post" action="insert.php">
+                    <h2>入力フォーム</h2>
 						
-						<lable>ハンドルネーム</lable><br>
-						<input type="text" size="30" name="handlename"><br>
+                    <label>ハンドルネーム</label><br>
+                    <input type="text" size="40" name="handlename" class="textbox"><br>
 						
-						<label>タイトル</label><br>
-						<input type="text" size="30" name="title">
+                    <label>タイトル</label><br>
+                    <input type="text" size="40" name="title" class="textbox"><br>
 					
-						<label>コメント</label><br>
-					</form> 
-			</div>
+					<label>コメント</label><br>
+                    <textarea rows=7 cols=65 name="comments"></textarea><br>
+                        
+                    <input type="submit" value="投稿する" class="submit">
+                </form>
+            </div>
+        
+            <div class="leftbox2">
+                <h2>タイトル</h2>
+                記事の中身
+            </div>
+            
+            <div class="leftbox3">
+                <h2>タイトル</h2>
+                記事の中身
+            </div>
+                    
+			
 		
-
-    
 		<div class="rightside">
         	<h3>人気の記事</h3>
             	<ul>
