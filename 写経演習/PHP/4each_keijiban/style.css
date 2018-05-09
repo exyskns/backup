@@ -24,7 +24,7 @@ header li{list-style-type: none;
 }
 
 .leftside{float: left;
-	width: 900px;
+    width: 900px;
 }
 
 .leftside h1{margin-top:20px;
@@ -34,7 +34,7 @@ header li{list-style-type: none;
 	width:100%;
 }
 
-.leftbox1{clear: both;
+.leftbox1{
     border: solid 2px #dfdfdf;
     width: 900px;
     background-color: #fbfbfb;
@@ -63,19 +63,19 @@ header li{list-style-type: none;
     border-radius:5px;
 }
 
-.leftbox2{clear: both;
+.leftbox2{
     border: solid 2px #dfdfdf;
     width: 890px;
     background-color: #fbfbfb;
     margin-left: 5px;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.leftbox3{clear: both;
-    border: solid 2px #dfdfdf;
-    width: 900px;
-    background-color: #fbfbfb;
-    margin-left: 5px;
+.leftbox2 h2{font-size: 20px;
+    margin-left: 20px;
+    border-bottom: solid 2px lightgray;
+    width: 95%;
 }
 
 .rightside{float: left;

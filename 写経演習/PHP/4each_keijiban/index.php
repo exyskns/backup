@@ -23,8 +23,7 @@
 <body>
 	<div class="mainbox">
     	<div class="leftside">
-        	<h1>プログラミングに役立つ掲示板</h1>
-    	</div>
+            <h1>プログラミングに役立つ掲示板</h1>
 
 			<div class="leftbox1">
 				<form method="post" action="insert.php">
@@ -44,16 +43,15 @@
             </div>
         
             <div class="leftbox2">
+                
                 <h2>タイトル</h2>
+                <?php
+                $i=1;
+                while($i <= )
+                
                 記事の中身
             </div>
-            
-            <div class="leftbox3">
-                <h2>タイトル</h2>
-                記事の中身
-            </div>
-                    
-			
+        </div>            
 		
 		<div class="rightside">
         	<h3>人気の記事</h3>
