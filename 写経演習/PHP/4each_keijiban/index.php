@@ -45,11 +45,21 @@
             <div class="leftbox2">
                 
                 <h2>タイトル</h2>
-                <?php
-                $i=1;
-                while($i <= )
                 
-                記事の中身
+                <?php
+                
+                mb_internal_encoding("utf8");
+                $pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","mysql");
+                $stmt = $pdo->query("select*from 4each_keijiban");
+                
+                while ($row = $stmt->fetch()){
+                    echo $row['handlename'];
+                    echo $row['title'];
+                    echo $row['comments'];
+                }
+                
+                ?>
+                
             </div>
         </div>            
 		
