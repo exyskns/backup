@@ -42,25 +42,27 @@
                 </form>
             </div>
         
-            <div class="leftbox2">
-                
-                <h2>タイトル</h2>
-                
-                <?php
-                
-                mb_internal_encoding("utf8");
+            <?php
+            
+            mb_internal_encoding("utf8");
                 $pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","mysql");
                 $stmt = $pdo->query("select*from 4each_keijiban");
-                
-                while ($row = $stmt->fetch()){
-                    echo $row['handlename'];
-                    echo $row['title'];
-                    echo $row['comments'];
-                }
+            ?>
+            
+            <?php
+            
+            while ($row = $stmt->fetch()){
+            
+                echo " <div class='leftbox2'>";
+                echo " <h3>".$row['title']."</h3>";
+                echo "<div class='contents'>";
+                echo $row['comments'];
+                echo "<div class='handlename'>posted by".$row['handlename']."</div>";
+                echo "</div>";
+                echo "</div>";
+                 }
                 
                 ?>
-                
-            </div>
         </div>            
 		
 		<div class="rightside">

@@ -7,7 +7,7 @@ $pdo=new PDO("mysql:dbname=lesson01;host=localhost;","root","mysql");
 
 
 $pdo->exec("insert into 4each_keijiban(handlename,title,comments)values
-    ('".$_POST['handlename']."','".POST_['title']."','".POST_['comments']."');");
+    ('".$_POST['handlename']."','".$_POST['title']."','".$_POST['comments']."');");
 
 
 
