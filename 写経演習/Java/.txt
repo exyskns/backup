@@ -1,0 +1,34 @@
+
+public class Person {
+	public String name =null;
+	//文字列が入る"箱"フィールド変数
+	public int age =0;
+	//整数が入る"箱"=フィールド変数
+
+	public String adress =null;
+
+	public void talk(){
+	System.out.println(this.name + "が話す");
+	}
+
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		Person taro=new Person();
+		//taro(変数)に=newで代入
+
+			taro.name="太郎";
+			taro.age=20;
+			taro.adress="東京";
+		//taro.（ﾀﾛｰﾄﾞｯﾄ）で上のtaroの機能を呼ぶ
+
+			System.out.println(taro.name);
+			System.out.println(taro.age);
+			System.out.println(taro.adress);
+			taro.talk();
+	}
+
+}
