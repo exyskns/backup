@@ -8,68 +8,71 @@ public class TestUserDAO {
 	String name ="";
 	String pssword ="";
 
-public void select(String name,String password){
-	DBConnector db =new DBConnector();
-	Connection con =db.getConnection();
+	public void select(String name,String password){
+		DBConnector db =new DBConnector();
+		Connection con =db.getConnection();
 
-	String sql ="select * from test_table where user_name=? and password=?";
-	try {
-		PreparedStatement ps =con.prepareStatement(sql);
-		ps.setString(1,name);
-		ps.setString(2,password);
-		ResultSet rs=ps.executeQuery();
-		if (rs.next()){
-			System.out.println(rs.getString("user_neme"));
-			System.out.println(rs.getString("password"));
+		String sql ="select * from test_table where user_name=? and password=?";
 
+		try {
+			PreparedStatement ps =con.prepareStatement(sql);
+			ps.setString(1,name);
+			ps.setString(2,password);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()){
+				System.out.println(rs.getString("user_name"));
+				System.out.println(rs.getString("password"));
+			}
 		}
-	}catch (SQLException e) {
+		catch (SQLException e) {
 		e.printStackTrace();
-	}
-	try {
-		con.close();
-	} catch (SQLException e) {
+		}
+		try {
+			con.close();
+		}
+		catch (SQLException e) {
 		e.printStackTrace();
-	}
-}
-
-public void selectA11() {
-	DBConnector db = new DBConnector();
-	Connection con = db.getConnection();
-
-	String sql = "select*from test_table";
-
-	try {
-		PreparedStatement ps = con.prepareStatement(sql);
-		ResultSet rs=ps.executeQuery();
-		while (rs.next()) {
-			System.out.println(rs.getString("user_name"));
-			System.out.println(rs.getString("password"));
 		}
 	}
-	catch (SQLException e ) {
-	e.printStackTrace();
-	}
-	try {
-		con.close();
-	}
-	catch (SQLException e ) {
+
+	public void selectAll() {
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+
+		String sql = "select*from test_table";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while (rs.next()) {
+				System.out.println(rs.getString("user_name"));
+				System.out.println(rs.getString("password"));
+			}
+		}
+		catch (SQLException e ) {
 		e.printStackTrace();
+		}
+		try {
+			con.close();
+		}
+		catch (SQLException e ) {
+			e.printStackTrace();
+		}
 	}
-}
 
 	public void selectByName(String name) {
 		DBConnector db =new DBConnector();
 		Connection con =db.getConnection();
 
-		String sql = "seclet*from test_table where usre_name=?";
+		String sql = "select*from test_table where user_name=?";
+
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,name);
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()) {
-				System.out.println(rs.getString("user_name"));
-				System.out.println(rs.getString("password"));
+					System.out.println(rs.getString("user_name"));
+					System.out.println(rs.getString("password"));
 			}
 		}
 		catch(SQLException e) {
@@ -79,9 +82,10 @@ public void selectA11() {
 			con.close();
 		}
 		catch (SQLException e) {
-			e.printStackTrace();
+				e.printStackTrace();
 		}
 	}
+
 	public void selectByPassword(String password) {
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
@@ -93,8 +97,8 @@ public void selectA11() {
 			ps.setString(1,password);
 			ResultSet rs=ps.executeQuery();
 			while(rs.next()) {
-				System.out.println(rs.getString("user_name"));
-				System.out.println(rs.getString("password"));
+					System.out.println(rs.getString("user_name"));
+					System.out.println(rs.getString("password"));
 			}
 		}
 
@@ -109,11 +113,12 @@ public void selectA11() {
 		}
 	}
 
-	public void updateUseraNameByUserName(String oldName,String newName) {
-		DBConnector db.=new DBConnector();
+	public void updateUserNameByUserName(String oldName,String newName) {
+		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
 		String sql="update test_table set user_name=? where user_name=?";
+
 		try {
 			PreparedStatement ps=con.prepareStatement(sql);
 			ps.setString(1, newName);
@@ -138,11 +143,12 @@ public void selectA11() {
 
 	}
 
-	public void insert(int user_id,String namem,String password) {
+	public void insert(int user_id,String name,String password) {
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
 		String sql ="insert into test_table values(?,?,?)";
+
 		try {
 			PreparedStatement ps=con.prepareStatement(sql);
 			ps.setInt(1,user_id);
@@ -170,6 +176,7 @@ public void selectA11() {
 		Connection con=db.getConnection();
 
 		String sql="delete from test_table where user_name=?";
+
 		try {
 			PreparedStatement ps=con.prepareStatement(sql);
 			ps.setString(1, name);
@@ -189,4 +196,6 @@ public void selectA11() {
 		}
 	}
 
+
 }
+
