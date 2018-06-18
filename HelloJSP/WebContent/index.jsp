@@ -3,11 +3,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset=UTF-8">
+	<meta charset="UTF-8">
 	<title>TEST</title>
 </head>
 <body>
-
 <p>お名前を入力してください。</p>
 <form method="post" action="greeting-out.jsp">
 <input type="text" name="user">
