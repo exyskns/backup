@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 
 /**
@@ -24,18 +24,18 @@ import com.mysql.jdbc.Connection;
 		private static String driverName = "com.mysql.jdbc.Driver";
 		/**
 		 * データベース接続URL
-		 */		
+		 */
 		private static String url =
-			"jdbc:mysql://localhost/testdb2?autoReconnect=true&useSSL=false";
+			"jdbc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
 		 /**
 		 * データベース接続ユーザー名
-		 */	
+		 */
 		private static String user = "root";
 		/**
 		 * データベース接続パスワード
 		 */
 		private static String password = "mysql";
-		
+
 	public Connection getConnection() {
 	Connection con = null;
 	try{
