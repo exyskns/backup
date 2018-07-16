@@ -23,8 +23,23 @@ public class LoginDAO {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, username);
 			ps.setString(2, password);
-			ResultSet rs = ps
+			ResultSet rs = ps.executeQuery();
+			if(rs.next()) {
+				dto.setUsername(rs.getString("user_name"));
+				dto.setPassword(rs.getString("passoword"));
+			}else {
+				dto.setUsername("該当なし");
+				dto.setPassword("該当なし");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
+		try {
+			con.close();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return dto;
 	}
 
 }
