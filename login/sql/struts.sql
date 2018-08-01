@@ -1,8 +1,8 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists logindb;
-create database logindb;
-use logindb;
+drop database if exists logindb5;
+create database logindb5;
+use logindb5;
 
 create table user(
 id int,
