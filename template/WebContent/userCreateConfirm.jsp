@@ -97,7 +97,7 @@
 				</tr>
 				<tr>
 					<td>
-						<s;submit value="完了"/>
+						<s:submit value="完了"/>
 					</td>
 				</tr>
 			</s:form>
